@@ -1,0 +1,410 @@
+    .content-wrapper:has(.exambody) {
+        padding-left: 0;
+        padding-right: 0;
+        padding-top: 0;
+    }
+
+    .exam-title-body {
+        color: var(--inversefrontcolor);
+        height: fit-content;
+        position: relative;
+
+        .exam-hover {
+            background-image: url("/static/image/tool/zbsygate.jpg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            filter: brightness(0.9);
+            height: calc(100% - 20px);
+            position: absolute;
+            z-index: -1;
+
+        }
+
+
+        .exam-title {
+            font-size: 28px;
+            font-weight: 700;
+            margin-top: 14px;
+            margin-bottom: 14px;
+        }
+
+        .exam-title-button {
+            margin: 0 !important;
+
+            * {
+                margin-top: 8px;
+            }
+
+
+            .right-item {
+                text-align: center;
+                display: inline-block;
+                padding-left: 12px;
+                padding-right: 12px;
+
+                .item-title {
+                    font-size: 14px;
+                    height: 21px;
+                    line-height: 14px;
+                }
+
+                .item-content {
+                    font-size: 14px;
+                    font-weight: 700;
+                    height: 21px;
+                    line-height: 14px;
+                }
+
+                /*中间的竖线 */
+                &:not(:last-child) {
+                    border-right: 1px solid rgb(221, 221, 221);
+                }
+            }
+        }
+    }
+
+    .exam-total-body {
+        margin-top: 25px;
+        background-color: var(--subbackcolor);
+        padding-top: 15px;
+        padding-bottom: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+
+        .total-title {
+            font-size: 18px;
+            font-weight: 300;
+            margin-bottom: 20px;
+            opacity: 0.5;
+        }
+
+        .total-content.first {
+            border-bottom: 1px solid rgb(221, 221, 221);
+            padding-bottom: 10px;
+        }
+
+        .total-content {
+            text-align: center;
+
+            .total-score {
+                font-size: 36px;
+                font-weight: 600;
+            }
+
+            .total-score-sec {
+                opacity: 0.75;
+                font-size: 28px;
+                font-weight: 600;
+            }
+
+            .total-dec {
+                font-size: 18px;
+                font-weight: 400;
+                margin-left: 5px;
+                margin-right: 5px;
+            }
+
+            .total-dec-sec {
+                font-size: 14px;
+                font-weight: 400;
+                margin-left: 5px;
+                margin-right: 5px;
+            }
+
+            .total-fullscore {
+                font-size: 18px;
+                font-weight: 300;
+            }
+
+            .total-fullscore-sec {
+                font-size: 14px;
+                font-weight: 300;
+            }
+
+            .total-desc {
+                font-size: 14px;
+                font-weight: 500;
+                opacity: 0.4;
+            }
+        }
+    }
+
+    .exam-subject-body {
+        background-color: var(--subsubbackcolor);
+        padding-top: 15px;
+        padding-bottom: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+
+        .subject-title {
+            display: none;
+            font-size: 18px;
+            font-weight: 300;
+            margin-bottom: 20px;
+            opacity: 0.5;
+        }
+
+        .subject-content {
+
+            >* {
+                padding: 0 5px;
+            }
+
+            .subject-item {
+                background-color: var(--subbackcolor);
+                margin: 5px 0;
+                border: 1px solid rgb(221, 221, 221);
+                border-radius: 2px;
+                padding: 5px 10px;
+
+                .subject-item-title {
+                    font-size: 18px;
+                    padding-left: 10px;
+                    margin: 5px 0;
+                }
+
+                .subject-item-firstline {
+                    padding-left: 10px;
+                    padding-right: 10px;
+                    margin-top: 15px;
+                    margin-bottom: 20px;
+
+                    .item-title {
+                        font-size: 12px;
+                        font-weight: 300;
+                        margin-bottom: 5px;
+                    }
+
+                    .item-content {
+                        font-size: 16px;
+                        font-weight: 600;
+                    }
+
+                    .subject-score-dec {
+                        font-size: 14px;
+                        font-weight: 300;
+                        margin-left: 5px;
+                        margin-right: 5px;
+                    }
+
+                    .subject-score-full {
+                        font-size: 14px;
+                        font-weight: 300;
+                    }
+
+                    .subject-score {
+                        font-size: 26px;
+                        font-weight: 600;
+                    }
+
+                    .subject-level {
+                        font-size: 26px;
+                        font-weight: 500;
+                        margin-right: 50px;
+                    }
+                }
+
+                .subject-item-secondline {
+                    margin-top: 3px;
+                    padding-top: 10px;
+                    padding-bottom: 5px;
+                    border-top: 1px solid rgb(221, 221, 221);
+
+                    .secondline-item {
+                        .item-title {
+                            font-size: 12px;
+                            font-weight: 500;
+                            margin-bottom: 5px;
+                            opacity: 0.4;
+                        }
+
+                        .item-content {
+                            font-size: 18px;
+                            font-weight: 600;
+                        }
+
+                        * {
+                            display: block;
+                            text-align: center;
+                        }
+
+                    }
+
+                    .divider {
+                        height: 40px;
+                        background-color: var(--frontcolor);
+                        opacity: 0.2;
+                        width: 1px;
+                    }
+                }
+
+            }
+        }
+    }
+
+    .divline {
+        height: 1px;
+        background-color: var(--frontcolor);
+        opacity: 0.1;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    :root {
+
+        /* 按分数划分的ABCDE等级 - 从绿色到红色渐变 */
+        .grade-score-a {
+            color: #27ae60;
+            /* 深绿色 - 优秀 */
+            font-weight: bold;
+        }
+
+        .grade-score-b {
+            color: #2ecc71;
+            /* 绿色 - 良好 */
+            font-weight: bold;
+        }
+
+        .grade-score-c {
+            color: #f39c12;
+            /* 橙色 - 中等 */
+            font-weight: bold;
+        }
+
+        .grade-score-d {
+            color: #e67e22;
+            /* 红橙色 - 及格边缘 */
+            font-weight: bold;
+        }
+
+        .grade-score-e {
+            color: #e74c3c;
+            /* 红色 - 不及格 */
+            font-weight: bold;
+        }
+
+        /* 按排名划分的ABC线等级 - 985211/重点本科/一本/未达线 */
+        .grade-rank-a {
+            color: #27ae60;
+            /* 深绿色 - 985211线 */
+            font-weight: bold;
+        }
+
+        .grade-rank-b {
+            color: #2ecc71;
+            /* 绿色 - 重点本科线 */
+            font-weight: bold;
+        }
+
+        .grade-rank-c {
+            color: #f1c40f;
+            /* 黄色 - 一本线 */
+            font-weight: bold;
+        }
+
+        .grade-rank-d {
+            color: #e74c3c;
+            /* 红色 - 未达线 */
+            font-weight: bold;
+        }
+
+        /* 通用等级样式 - 可根据需要选择使用 */
+        .grade-a {
+            color: #27ae60;
+            font-weight: bold;
+        }
+
+        /* 顶级/优秀 */
+        .grade-b {
+            color: #2ecc71;
+            font-weight: bold;
+        }
+
+        /* 优秀/良好 */
+        .grade-c {
+            color: #f39c12;
+            font-weight: bold;
+        }
+
+        /* 良好/中等 */
+        .grade-d {
+            color: #e67e22;
+            font-weight: bold;
+        }
+
+        /* 中等/及格 */
+        .grade-e {
+            color: #e74c3c;
+            font-weight: bold;
+        }
+
+        /* 不及格/较差 */
+
+        /* 背景色版本 - 如果需要背景色突出显示 */
+        .grade-bg-a {
+            background-color: #d4f8e8;
+            color: #27ae60;
+            padding: 2px 6px;
+            border-radius: 3px;
+        }
+
+        .grade-bg-b {
+            background-color: #d5f5e3;
+            color: #2ecc71;
+            padding: 2px 6px;
+            border-radius: 3px;
+        }
+
+        .grade-bg-c {
+            background-color: #fef9e7;
+            color: #f39c12;
+            padding: 2px 6px;
+            border-radius: 3px;
+        }
+
+        .grade-bg-d {
+            background-color: #fadbd8;
+            color: #e67e22;
+            padding: 2px 6px;
+            border-radius: 3px;
+        }
+
+        .grade-bg-e {
+            background-color: #fadbd8;
+            color: #e74c3c;
+            padding: 2px 6px;
+            border-radius: 3px;
+        }
+    }
+
+    .exam-ana-body {
+        background-color: var(--subbackcolor);
+        padding-top: 15px;
+        padding-bottom: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+
+        .ana-title {
+            opacity: 0.5;
+            font-size: 18px;
+            font-weight: 300;
+            margin-bottom: 20px;
+        }
+
+        .ana-content {
+            .ana-item {
+                padding: 5px 10px;
+                margin-bottom: 20px;
+                background-color: var(--subbackcolor);
+
+                .ana-item-title {
+                    font-size: 18px;
+                    margin: 5px 0;
+                    font-weight: 600;
+                }
+            }
+
+
+        }
+    }

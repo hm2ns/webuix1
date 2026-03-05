@@ -1,0 +1,295 @@
+:root {
+    --frontcolor: rgb(30, 30, 30);
+    --backcolor: #EFEFEF;
+    --subbackcolor: #fefefe;
+    --subsubbackcolor: #eaeaea;
+    --activecolor: #FFFF00;
+    --barcolor: #000;
+    --barfcolor: #ddd;
+    --inversefrontcolor: #fff;
+}
+
+body,
+.content-wrapper {
+    color: var(--frontcolor);
+    background: none;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    z-index: -1;
+    background: var(--backcolor);
+    background-size: cover;
+}
+
+.abox,
+.problembox>div,
+.problemsubbox>div,
+.dropdown-menu,
+.dropdown-menu:hover,
+.dropdown-item:hover {
+    background: var(--subbackcolor);
+}
+
+.active-item {
+    border-bottom: 2px solid var(--activecolor);
+}
+
+.themed-color {
+    background: var(--subbackcolor);
+    color: var(--frontcolor);
+}
+
+:root {
+    list-style: none;
+}
+
+.content-wrapper {
+    background: none;
+}
+
+nav {
+    background: var(--barcolor);
+    color: var(--barfcolor);
+}
+
+.passage-info {
+
+    h1,
+    h2,
+    h3 {
+        color: #0056b3;
+    }
+
+    h1 {
+        text-align: center;
+        border-bottom: 2px solid #0056b3;
+        padding-bottom: 10px;
+    }
+
+    h2 {
+        border-left: 4px solid #0056b3;
+        padding-left: 10px;
+        margin-top: 30px;
+    }
+
+    .section {
+        margin-bottom: 25px;
+    }
+
+    .highlight {
+        background-color: #fff3cd;
+        padding: 15px;
+        border-left: 4px solid #ffc107;
+        margin: 20px 0;
+        font-size: 0.95em;
+    }
+
+    .footer {
+        text-align: center;
+        margin-top: 50px;
+        color: #666;
+        font-size: 0.9em;
+        border-top: 1px solid #ddd;
+        padding-top: 20px;
+    }
+
+    ol,
+    ul {
+        padding-left: 20px;
+    }
+
+    li {
+        margin-bottom: 8px;
+    }
+}
+
+.colorful-blockquote {
+
+    blockquote,
+    div,
+    p {
+        border-left: 5px solid darkmagenta;
+        padding-left: 10px;
+        margin: 0;
+        border-radius: 0px;
+        padding-top: 8px;
+        padding-bottom: 8px;
+    }
+
+    .purple {
+        background-image: linear-gradient(to right, #e4def9 70%, var(--subbackcolor));
+        color: darkmagenta;
+    }
+
+    .red {
+        border-left: 5px solid red;
+        /* 使用原背景色 #f9e4e4 作为渐变起始色 */
+        background-image: linear-gradient(to right, #f9e4e4 70%, var(--subbackcolor));
+        color: darkred;
+    }
+
+    .pink {
+        border-left: 5px solid pink;
+        /* 使用原背景色 #f9e4f9 作为渐变起始色 */
+        background-image: linear-gradient(to right, #f9e4f9 70%, var(--subbackcolor));
+        color: darkred;
+    }
+
+    .yellow {
+        border-left: 5px solid yellow;
+        /* 使用原背景色 #f9f9e4 作为渐变起始色 */
+        background-image: linear-gradient(to right, #f9f9e4 70%, var(--subbackcolor));
+        color: darkkhaki;
+    }
+
+    .green {
+        border-left: 5px solid green;
+        /* 使用原背景色 #e4f9e4 作为渐变起始色 */
+        background-image: linear-gradient(to right, #e4f9e4 70%, var(--subbackcolor));
+        color: green;
+    }
+
+    .blue {
+        border-left: 5px solid blue;
+        /* 使用原背景色 #e4f9f9 作为渐变起始色 */
+        background-image: linear-gradient(to right, #e4f9f9 70%, var(--subbackcolor));
+        color: blue;
+    }
+
+    .orange {
+        border-left: 5px solid darkorange;
+        /* 使用原背景色 #f9f9e4 作为渐变起始色 */
+        background-image: linear-gradient(to right, #f9f9e4 70%, var(--subbackcolor));
+        color: orange;
+    }
+
+    .skyblue {
+        border-left: 5px solid cornflowerblue;
+        /* 使用原背景色 #e4f9f9 作为渐变起始色 */
+        background-image: linear-gradient(to right, #e4f9f9 70%, var(--subbackcolor));
+        color: cornflowerblue;
+    }
+
+    .light {
+        border-left: 5px solid #888;
+        /* 使用原背景色 #ddd 作为渐变起始色 */
+        background-image: linear-gradient(to right, #ddd 70%, var(--subbackcolor));
+        color: #333;
+    }
+
+    .dark {
+        border-left: 5px solid #333;
+        /* 使用原背景色 #444 作为渐变起始色 */
+        background-image: linear-gradient(to right, #444 70%, var(--subbackcolor));
+        color: #eee;
+    }
+}
+
+.descriptionbody {
+    .header {
+        display: flex;
+        align-items: left;
+        height: 100px;
+
+        .image {
+            width: 100px;
+            height: 100px;
+            margin-right: 10px;
+
+            img {
+                width: 100px;
+                height: 100px;
+            }
+        }
+
+        .username {
+            padding-top: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: left;
+
+            .desc {
+                font-size: 1.5rem;
+                font-weight: 600;
+                color: #333;
+            }
+
+            .sub-desc {
+                font-size: 0.875rem;
+                font-weight: 400;
+                color: #999;
+            }
+        }
+    }
+
+    .selfdesc {
+        .desc-row {
+            margin-bottom: 10px;
+            display: flex;
+            justify-content: space-between;
+            line-height: 25px;
+
+            .title {
+                font-size: 1.05rem;
+                font-weight: 500;
+                color: #333;
+
+                .bi {
+                    margin-right: 5px;
+                    margin-left: 2px;
+                }
+
+                text-wrap: none;
+                word-break:keep-all;
+            }
+
+            .desc {
+                font-size: 1.05rem;
+                font-weight: 400;
+                color: #444;
+                max-width: 70%;
+                text-align: right;
+                padding-left: 5px;
+            }
+        }
+    }
+
+    .buttons {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+
+        .btn {
+            margin: 0 5px;
+        }
+    }
+}
+
+.hover:hover img {
+    transform: scale(1.1);
+}
+
+.hover img {
+    transition: transform 0.3s ease;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+}
+
+.hover {
+    width: 100%;
+    overflow: hidden;
+    position: fixed;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 200px;
+}

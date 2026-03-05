@@ -1,0 +1,49 @@
+/* Liquid Glass Card 基础样式 */
+.liquid-glass {
+    .glass-card {
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(8px);
+        -webkit-backdrop-filter: blur(8px);
+        border-radius: 16px;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        overflow: hidden;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .glass-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 12px 32px rgba(0, 0, 0, 0.15);
+    }
+
+    /* 图片容器圆角 */
+    .card-img-top {
+        border-radius: 16px 16px 0 0;
+    }
+
+    /* 文字覆盖层：关键！确保文字清晰 */
+    .club-overlay {
+        background: linear-gradient(to top, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.3) 50%, transparent 100%);
+        z-index: 1;
+    }
+
+    /* 文字阴影增强可读性 */
+    .text-shadow {
+        text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6),
+            0 0 8px rgba(0, 0, 0, 0.4);
+        font-weight: 600;
+    }
+
+    /* Logo 样式 */
+    .icon-img {
+        width: 40px;
+        height: 40px;
+    }
+
+    /* 响应式安全边距 */
+    @media (max-width: 768px) {
+        .club-overlay {
+            padding: 1rem;
+        }
+
+    }
+}

@@ -1,0 +1,145 @@
+.xq {
+    display: none;
+}
+
+table tr td {
+    text-align: center;
+    border: 1px soild black;
+    margin: 0;
+    padding: 5px 15px;
+}
+
+table tr th {
+    text-align: center;
+    border: 1px soild black;
+    margin: 0;
+    padding: 5px 15px;
+}
+
+table {
+    width: 100%;
+}
+
+.thint {
+    width: 50px;
+}
+
+.mthint {
+    width: 100px;
+}
+
+.top-pos {
+    position: fixed;
+    right: calc(50vw - 200px);
+    z-index: 9999;
+    top: 55px;
+    overflow: auto;
+    max-height: 80vh;
+    width: 400px;
+}
+
+.top-pos::-webkit-scrollbar,.right-pos::-webkit-scrollbar {
+    width: 4px;
+}
+
+.right-pos {
+    position: fixed;
+    right: 0;
+    z-index: 9999;
+    top: 0;
+    overflow: auto;
+    max-height: 99vh;
+    /*scrollbar-width: 2px;*/
+}
+
+.right-pos::-webkit-scrollbar {
+    width: 2px;
+}
+
+.s-table-item {
+    padding: 5px;
+    padding-left: 10px;
+    position: relative;
+}
+
+.s-table-item>div {
+    border: 1px solid;
+    border-radius: 1px;
+
+    height: 100px;
+    max-height: 100px;
+    overflow: auto;
+    word-break: break-all;
+    padding: 2px;
+    background: rgba(255, 255, 255, 0.5);
+}
+
+.s-table-item>div::-webkit-scrollbar {
+    width: 1px;
+}
+
+.s-table-item:after {
+    content: "123";
+    font-size: 0;
+    position: absolute;
+    left: 4px;
+    width: 3px;
+    background: #fff;
+    top: 0;
+    height: 100%;
+}
+
+.hiddenchild>* {
+    display: none;
+}
+
+.buttondiv {
+    text-align: center;
+    font-size: 35px;
+    text-shadow: #000 1px 1px;
+    color: #fff;
+    line-height: 100px;
+    opacity: .9;
+}
+
+.buttondiv:hover {
+    opacity: 0.7;
+    cursor: pointer;
+    box-shadow: 0px 0px 10px #333;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.carousel-item {
+    height: 100%;
+}
+
+.carousel-inner {
+    height: 100%;
+}
+
+.clogo {
+    width: 100%;
+    height: 100%;
+    animation: Rotate 6s infinite ease-in-out;
+}
+
+@keyframes Rotate {
+    0% {
+        transform: rotate(-360deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.full-scroll {
+    overflow: auto;
+    height: calc(100vh - 60px);
+}
