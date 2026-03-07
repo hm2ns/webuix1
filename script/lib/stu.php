@@ -200,11 +200,11 @@ class Stu
             );
             
             if (!empty($result)) {
-                //DEBUGGER::LOG("根据学号获取学生信息成功，学号: $xh", DEBUGGER::DEBUG_LEVEL_INFO);
+                DEBUGGER::LOG("根据学号获取学生信息成功，学号: $xh", DEBUGGER::DEBUG_LEVEL_INFO);
                 return $result[0];
             }
             
-            //DEBUGGER::LOG("学号不存在: $xh", DEBUGGER::DEBUG_LEVEL_INFO);
+            DEBUGGER::LOG("学号不存在: $xh", DEBUGGER::DEBUG_LEVEL_INFO);
             return null;
             
         } catch (PDOException $e) {

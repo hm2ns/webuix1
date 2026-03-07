@@ -2,7 +2,7 @@
 // 系统配置文件
 return [
     'ENV' => 'SA',
-    'titleSuffix' => '-WebUI-X',
+    'titleSuffix' => '-淄博实验_民意收集',
     'logo' => '/static/image/tool/logo.png',
     'logo_long' => '/static/image/tool/logo_long.png',
     'site_url'=>"http://uix.zsvstudio.top/",
@@ -10,9 +10,9 @@ return [
     'db' => array(
         'db_host' => 'localhost',
         'db_port' => '5432',
-        'db_name' => 'DEMO',
-        'db_user' => "DEMO",
-        'db_pass' => 'DEMO',
+        'db_name' => 'postgres',
+        'db_user' => "postgres",
+        'db_pass' => 'h201056001',
         'db_driver' => 'pgsql',  //目前只支持 pgsql
     ),
 
